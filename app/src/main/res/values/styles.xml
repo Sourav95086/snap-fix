@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style
+        name="ValidationField"
+        parent="Widget.AppCompat.EditText">
+
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="android:layout_height">50dp</item>
+
+        <item name="android:background">
+            @drawable/bg_validation_field
+        </item>
+
+        <item name="android:textColor">
+            #E8F0F7
+        </item>
+
+        <item name="android:textColorHint">
+            #536477
+        </item>
+
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:paddingStart">
+            14dp
+        </item>
+
+        <item name="android:paddingEnd">
+            14dp
+        </item>
+
+        <item name="android:singleLine">
+            true
+        </item>
+
+    </style>
+</resources>

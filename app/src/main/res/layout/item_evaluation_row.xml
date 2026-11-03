@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+    <!-- REPORT CONTRIBUTION -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="7dp"
+
+        android:gravity="center_vertical">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="REPORT CONTRIBUTION"
+
+                android:textColor="@color/white"
+
+                android:textSize="11sp"
+
+                android:textStyle="bold"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Number of submitted reports"
+
+                android:textColor="@color/text_muted"
+
+                android:textSize="9sp"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="40%"
+
+            android:textColor="@color/cyan"
+
+            android:textSize="12sp"
+
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/divider"/>
+
+
+    <!-- QUALITY -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="7dp"
+
+        android:gravity="center_vertical">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="REPORT QUALITY"
+
+                android:textColor="@color/white"
+
+                android:textSize="11sp"
+
+                android:textStyle="bold"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Quality and validity"
+
+                android:textColor="@color/text_muted"
+
+                android:textSize="9sp"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="25%"
+
+            android:textColor="@color/cyan"
+
+            android:textSize="12sp"
+
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/divider"/>
+
+
+    <!-- IMPACT -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="7dp"
+
+        android:gravity="center_vertical">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="ISSUE IMPACT"
+
+                android:textColor="@color/white"
+
+                android:textSize="11sp"
+
+                android:textStyle="bold"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Severity of reported issues"
+
+                android:textColor="@color/text_muted"
+
+                android:textSize="9sp"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="20%"
+
+            android:textColor="@color/cyan"
+
+            android:textSize="12sp"
+
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/divider"/>
+
+
+    <!-- COVERAGE -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="7dp"
+
+        android:gravity="center_vertical">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="LOCATION COVERAGE"
+
+                android:textColor="@color/white"
+
+                android:textSize="11sp"
+
+                android:textStyle="bold"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Coverage across civic areas"
+
+                android:textColor="@color/text_muted"
+
+                android:textSize="9sp"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="10%"
+
+            android:textColor="@color/cyan"
+
+            android:textSize="12sp"
+
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/divider"/>
+
+
+    <!-- COMMUNITY -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="7dp"
+
+        android:gravity="center_vertical">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="COMMUNITY VALUE"
+
+                android:textColor="@color/white"
+
+                android:textSize="11sp"
+
+                android:textStyle="bold"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Contribution to civic awareness"
+
+                android:textColor="@color/text_muted"
+
+                android:textSize="9sp"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="5%"
+
+            android:textColor="@color/cyan"
+
+            android:textSize="12sp"
+
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

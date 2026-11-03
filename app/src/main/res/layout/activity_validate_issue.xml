@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070B12">
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="22dp"
+            android:paddingBottom="30dp">
+
+
+            <!-- HEADER -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISSUE VALIDATION"
+                android:textColor="#00E5FF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Review report details before validation"
+                android:textColor="#8793A6"
+                android:textSize="13sp" />
+
+
+            <!-- REPORT DETAILS -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:text="REPORT DETAILS"
+                android:textColor="#E8F0F7"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+
+            <!-- REPORTER NAME -->
+
+            <EditText
+                android:id="@+id/etReporterName"
+                style="@style/ValidationField"
+                android:layout_marginTop="10dp"
+                android:hint="Reporter Name"
+                android:enabled="false"
+                android:textSize="10sp"/>
+
+
+            <!-- ISSUE DESCRIPTION -->
+
+            <EditText
+                android:id="@+id/etIssueDescription"
+                style="@style/ValidationField"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="9dp"
+                android:gravity="top"
+                android:hint="Issue Description"
+                android:inputType="textMultiLine"
+                android:paddingTop="13dp"
+                android:enabled="false" />
+
+
+            <!-- LOCATION ADDRESS -->
+
+            <EditText
+                android:id="@+id/etLocationAddress"
+                style="@style/ValidationField"
+                android:layout_marginTop="9dp"
+                android:hint="Location Address"
+                android:enabled="false" />
+
+
+            <!-- LANDMARK -->
+
+            <EditText
+                android:id="@+id/etLandmark"
+                style="@style/ValidationField"
+                android:layout_marginTop="9dp"
+                android:hint="Landmark"
+                android:enabled="false" />
+
+
+            <!-- CREATED AT -->
+
+            <EditText
+                android:id="@+id/etCreatedAt"
+                style="@style/ValidationField"
+                android:layout_marginTop="9dp"
+                android:hint="Created At"
+                android:enabled="false" />
+
+
+            <!-- VALIDATED -->
+
+            <EditText
+                android:id="@+id/etValidated"
+                style="@style/ValidationField"
+                android:layout_marginTop="9dp"
+                android:hint="Validated"
+                android:enabled="false" />
+
+
+            <!-- LOCATION -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="VALIDATION LOCATION"
+                android:textColor="#E8F0F7"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+
+            <!-- LATITUDE -->
+
+            <EditText
+                android:id="@+id/etLatitude"
+                style="@style/ValidationField"
+                android:layout_marginTop="10dp"
+                android:hint="Latitude"
+                android:enabled="false" />
+
+
+            <!-- LONGITUDE -->
+
+            <EditText
+                android:id="@+id/etLongitude"
+                style="@style/ValidationField"
+                android:layout_marginTop="9dp"
+                android:hint="Longitude"
+                android:enabled="false" />
+
+
+            <!-- FETCH LOCATION -->
+
+            <Button
+                android:id="@+id/btnFetchLocation"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:text="⌖   FETCH LOCATION"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_evidence_button"
+                android:backgroundTint="@null"
+                android:stateListAnimator="@null"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp" />
+
+
+            <!-- EVIDENCE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="EVIDENCE"
+                android:textColor="#E8F0F7"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+
+            <LinearLayout
+                android:id="@+id/evidenceContainer"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@drawable/bg_evidence_box">
+
+
+                <ImageView
+                    android:id="@+id/ivEvidence"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:contentDescription="Evidence image" />
+
+
+                <TextView
+                    android:id="@+id/tvEvidenceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No evidence image selected"
+                    android:textColor="#718094"
+                    android:textSize="11sp" />
+
+
+                <Button
+                    android:id="@+id/btnAddEvidence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="10dp"
+                    android:text="＋  ADD EVIDENCE IMAGE"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_evidence_button"
+                    android:backgroundTint="@null"
+                    android:stateListAnimator="@null"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp" />
+            </LinearLayout>
+
+
+            <!-- VALIDATE -->
+
+            <Button
+                android:id="@+id/btnValidateIssue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="22dp"
+                android:text="✓   VALIDATE ISSUE"
+                android:textColor="#031016"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_validate_button" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- LOADING -->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:visibility="gone"
+        android:indeterminateTint="#00E5FF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070B12"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- TOP STATUS -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEARANCE ENCRYPTED // NEW OPERATOR"
+            android:textColor="#00E5FF"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace" />
+
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/bg_logo"
+                android:gravity="center"
+                android:text="△"
+                android:textColor="#00E5FF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="OPERATOR REGISTRATION"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Initialize municipal command clearance"
+                android:textColor="#8995A3"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+
+        <!-- FORM CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_auth_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- USERNAME -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OPERATOR USERNAME"
+                android:textColor="#AAB4C0"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <EditText
+                android:id="@+id/usernameInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:hint="  ENTER USERNAME"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#66717E"
+                android:textSize="11sp"
+                android:fontFamily="monospace" />
+
+
+            <!-- EMAIL -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="OPERATOR EMAIL"
+                android:textColor="#AAB4C0"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:hint="  EMAIL@SECURE.NET"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#66717E"
+                android:textSize="11sp"
+                android:fontFamily="monospace" />
+
+
+            <!-- PASSWORD -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="SECURITY ACCESS KEY"
+                android:textColor="#AAB4C0"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:hint="  •••••••••••••"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#66717E"
+                android:textSize="11sp"
+                android:fontFamily="monospace" />
+
+
+            <!-- CONFIRM PASSWORD -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="CONFIRM ACCESS KEY"
+                android:textColor="#AAB4C0"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <EditText
+                android:id="@+id/confirmPasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:hint="  •••••••••••••"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#66717E"
+                android:textSize="11sp"
+                android:fontFamily="monospace" />
+
+
+            <!-- SIGNUP -->
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_cyan_button"
+                android:text="CREATE CLEARANCE  →"
+                android:textColor="#001018"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+        </LinearLayout>
+
+
+        <!-- LOGIN -->
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_secondary_button"
+            android:gravity="center"
+            android:text="← RETURN TO AUTHENTICATION"
+            android:textColor="#B9C3CE"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="NEW OPERATOR CLEARANCE • PROTOCOL 4.2"
+            android:textColor="#4F5C69"
+            android:textSize="7sp"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+
+</ScrollView>

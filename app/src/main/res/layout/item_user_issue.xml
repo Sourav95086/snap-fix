@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical"
+    android:padding="13dp"
+    android:background="@drawable/bg_user_issue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/issueIdText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ISSUE #414"
+            android:textColor="#00D9FF"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"/>
+
+        <TextView
+            android:id="@+id/reportIdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REPORT ID 625"
+            android:textColor="#596777"
+            android:textSize="7sp"
+            android:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Large pothole reported on the road"
+        android:textColor="#E5EAF0"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:maxLines="2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BHUBANESWAR"
+            android:textColor="#7D8B9B"
+            android:textSize="7sp"
+            android:fontFamily="monospace"/>
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16 SEP 2026"
+            android:textColor="#687586"
+            android:textSize="7sp"
+            android:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+</LinearLayout>

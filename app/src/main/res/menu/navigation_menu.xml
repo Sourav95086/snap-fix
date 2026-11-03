@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navAnalyticalDashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Analytical Dashboard" />
+
+        <item
+            android:id="@+id/navMonthlyContest"
+            android:icon="@drawable/ic_trophy"
+            android:title="Monthly Contest" />
+
+        <item
+            android:id="@+id/navNonValidatedIssues"
+            android:icon="@drawable/ic_warning"
+            android:title="Non-Validated Issues" />
+
+    </group>
+
+    <!-- Logout -->
+    <item
+        android:id="@+id/navLogout"
+        android:icon="@drawable/ic_logout"
+        android:title="LOGOUT" />
+
+</menu>

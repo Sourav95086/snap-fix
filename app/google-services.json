@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "893296330854",
+    "project_id": "snapfix-e9bde",
+    "storage_bucket": "snapfix-e9bde.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893296330854:android:0d99fe31943088da8185a7",
+        "android_client_info": {
+          "package_name": "com.nextgenius.snapfix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa-79USK107h6YmSs_pNYWabSgAuS4BBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

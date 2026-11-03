@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070B12"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CLEARANCE ENCRYPTED // TLS V1.3"
+                android:textColor="#00E5FF"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NODE 08-SEC"
+                android:textColor="#B5C1CE"
+                android:textSize="8sp"
+                android:fontFamily="monospace" />
+
+        </LinearLayout>
+
+
+        <!-- LOGO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/bg_logo"
+                android:gravity="center"
+                android:text="△"
+                android:textColor="#00E5FF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TACTICAL OPS GATEWAY"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Municipal Telemetry &amp; Emergency Command Portal"
+                android:textColor="#AAB4C0"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+
+        <!-- LOGIN CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_auth_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- USERNAME LABEL -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="OPERATOR EMAIL"
+                    android:textColor="#AAB4C0"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID-SEC"
+                    android:textColor="#00E5FF"
+                    android:textSize="8sp"
+                    android:fontFamily="monospace" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:hint="  EMAIL@SECURE.NET"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#66717E"
+                android:textSize="12sp"
+                android:fontFamily="monospace" />
+
+
+            <!-- PASSWORD LABEL -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SECURITY ACCESS KEY"
+                    android:textColor="#AAB4C0"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CIPHER"
+                    android:textColor="#00E5FF"
+                    android:textSize="8sp"
+                    android:fontFamily="monospace" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:hint="  •••••••••••••"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#66717E"
+                android:textSize="12sp"
+                android:fontFamily="monospace" />
+
+
+            <!-- FORGOT PASSWORD -->
+
+            <TextView
+                android:id="@+id/forgotPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:text="FORGOT ACCESS KEY?"
+                android:textColor="#00E5FF"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+            <!-- LOGIN BUTTON -->
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_cyan_button"
+                android:text="AUTHENTICATE &amp; INGRESS  →"
+                android:textColor="#001018"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+        </LinearLayout>
+
+
+        <!-- DIVIDER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#26313D" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="OR SECONDARY INGRESS"
+                android:textColor="#687582"
+                android:textSize="7sp"
+                android:fontFamily="monospace" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#26313D" />
+
+        </LinearLayout>
+
+
+        <!-- REGISTER BUTTON -->
+
+        <TextView
+            android:id="@+id/registerText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_secondary_button"
+            android:gravity="center"
+            android:text="REGISTER NEW OPERATOR"
+            android:textColor="#D5DCE5"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- FOOTER -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="New Incident Operator?  REGISTER CLEARANCE / SIGN UP"
+            android:textColor="#00E5FF"
+            android:textSize="7sp"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="◦ UNAUTHORIZED INGRESS RESTRICTED\nGRID PROTOCOL 4.2 • SECTOR 08-CIV COMMAND"
+            android:textColor="#4F5C69"
+            android:textSize="7sp"
+            android:lineSpacingExtra="4dp"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+
+</ScrollView>

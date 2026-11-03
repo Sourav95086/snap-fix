@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:paddingStart="24dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="20dp"
+    android:background="#0B1220">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SnapFix"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Civic Intelligence Platform"
+        android:textColor="#7F8A9A"
+        android:textSize="10sp"/>
+
+    <View
+        android:layout_width="42dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="14dp"
+        android:background="#00D9FF"/>
+
+</LinearLayout>

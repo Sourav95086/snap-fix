@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#08111D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+
+        <!-- ================================================= -->
+        <!-- HEADER -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPopupCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SOLUTION • HIGH PRIORITY"
+                    android:textColor="#00D9FF"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08"/>
+
+                <TextView
+                    android:id="@+id/tvPopupStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="●  IMPACT ANALYSIS READY"
+                    android:textColor="#22C55E"
+                    android:textSize="9sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/btnClose"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="×"
+                android:textColor="#8B95A7"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- TITLE -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:id="@+id/tvPopupTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Drainage System Inspection and Debris Clearance"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/tvPopupTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Target: Puri • Odisha • Ward 6"
+            android:textColor="#8B95A7"
+            android:textSize="11sp"/>
+
+
+        <!-- ================================================= -->
+        <!-- DESCRIPTION -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:padding="13dp"
+            android:orientation="vertical"
+            android:background="#0F1B2A">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INTERVENTION"
+                android:textColor="#00D9FF"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"/>
+
+            <TextView
+                android:id="@+id/tvPopupDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="#C6D0DC"
+                android:textSize="11sp"
+                android:lineSpacingExtra="3dp"/>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- METRICS -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+
+            <!-- COST -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="92dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_solution_card">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL EST. COST"
+                    android:textColor="#7F8DA1"
+                    android:textSize="8sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPopupCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="$100.0K"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPopupCostRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="$100K – $125K"
+                    android:textColor="#7F8DA1"
+                    android:textSize="8sp"/>
+
+            </LinearLayout>
+
+
+            <!-- ROI -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="92dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_solution_card">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROJECTED ROI"
+                    android:textColor="#7F8DA1"
+                    android:textSize="8sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPopupROI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="+$67.0K"
+                    android:textColor="#22C55E"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPopupBenefitRatio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="0.80x – 1.67x"
+                    android:textColor="#7F8DA1"
+                    android:textSize="8sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- POPULATION -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_solution_card">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AFFECTED POPULATION"
+                    android:textColor="#7F8DA1"
+                    android:textSize="8sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPopupPopulation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="25"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_solution_card">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EST. BENEFICIARIES"
+                    android:textColor="#7F8DA1"
+                    android:textSize="8sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPopupBeneficiaries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="14"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- SECTION: ECONOMIC -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="CAPEX &amp; ECONOMIC IMPACT"
+                android:textColor="#00D9FF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="13dp"
+                android:orientation="vertical"
+                android:background="#0F1B2A">
+
+
+                <TextView
+                    android:id="@+id/tvPopupEstimatedCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Initial Infrastructure Cost"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:lineSpacingExtra="3dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvPopupBenefit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:lineSpacingExtra="3dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvPopupNetBenefit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:lineSpacingExtra="3dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvPopupRatio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:lineSpacingExtra="3dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- EXPECTED CASE -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="EXPECTED CASE"
+                android:textColor="#00D9FF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"/>
+
+
+            <TextView
+                android:id="@+id/tvPopupScenario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="13dp"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:lineSpacingExtra="4dp"
+                android:background="#0F1B2A"/>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- SOCIAL IMPACT -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="13dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_solution_card">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOCIAL IMPACT SCORE"
+                android:textColor="#7F8DA1"
+                android:textSize="8sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvPopupSocialImpact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="18.75"
+                android:textColor="#00D9FF"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- CONFIDENCE -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="13dp"
+            android:orientation="vertical"
+            android:background="#0F1B2A">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MODEL CONFIDENCE"
+                android:textColor="#00D9FF"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"/>
+
+            <TextView
+                android:id="@+id/tvPopupConfidence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:textColor="#C6D0DC"
+                android:textSize="10sp"
+                android:lineSpacingExtra="5dp"/>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- AUTHORIZE -->
+        <!-- ================================================= -->
+
+
+
+
+        <!-- ================================================= -->
+        <!-- DOWNLOAD -->
+        <!-- ================================================= -->
+
+
+
+
+        <!-- Bottom spacing -->
+
+
+
+    </LinearLayout>
+
+</ScrollView>
